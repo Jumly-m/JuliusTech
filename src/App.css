@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+
+
+body,html{
+  width:100%;
+  height: 100%;
+ border-color:1px solid red;
+ font-family: "Space Grotesk", sans-serif;
+ background-color:lightcyan !important;
+ color: #000000; /* Black */
+}
+
+.header_container{
+  margin-bottom: 100px;
+
+}
+.header{
+  background-color: #20b2aa;
+  height: 130px;
+}
+
+.nav_items{
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+}
+
+.home_page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:1px solid red;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  flex-direction: column;
+}
+
+
+
+
+/* !!!: Design for small devices  */
+@media only screen and (max-width: 678px) {
+  .header_container{
+    margin-bottom: 50px;
+
+  }
+  .introduction_section{
+    margin-top: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .introduction_section h1{
+    margin-bottom: 25px;
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    }
+    .introduction_section h3{
+      text-align: center;
+    }
+    .introduction_section h6{
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+    .work_time{
+      border:1px solid red;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      flex-direction: column;
+      border:1px solid #6c757d;
+      border-radius: 12px;
+      margin-left: 12px;
+      margin-right: 12px;
+      padding: 10px;
+    }
+    .phone{
+    text-decoration: none;
+    margin-left: 10px;
+    color:inherit;
+    }
+    .bi-clock{
+      margin-right: 10px;
+    }
+
+    .contact-btn-container{
+      width: 75%;
+      margin-top: 20px;
+      border:none;
+    }
+    .contact-btn{
+      width: 100%;
+      background-color: #20b2aa !important; 
+      border:none !important;
+    }
+    .headeer-btn{
+      background-color: #2f4f4f !important;
+      width: 100%;
+      color:#000000 !important;
+    }
+    .projects_section{
+      border:1px solid yellow;
+      margin-top: 30px;
+    }
+
+    .projects_section h3{
+      font-weight: 600;
+    }
+}
+
+
+
+
+
+
+/* !!!: Design for large screens */
+@media only screen and (min-width: 678px) {
+  .header_container{
+    margin-bottom: 20px;
+  
+  }
+  .introduction_section{
+    margin-top: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    height: 200px;
+  }
+  
+  .introduction_section h1{
+    margin-bottom: 25px;
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    }
+    .introduction_section h3{
+      text-align: center;
+    }
+    .introduction_section h6{
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+  .work_time{
+    border:1px solid red;
+    margin-top: 2px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    border:1px solid #6c757d;
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+    margin-left: 16px;
+  }
+  .phone{
+  text-decoration: none;
+  margin-left: 10px;
+  color:inherit;
+  }
+  .bi-clock{
+    margin-right: 10px;
+  }
+  .contact-btn-container{
+    width: 400px;
+    margin-top: 20px;
+  }
+  .contact-btn{
+    width: 100%;
+    background-color: #2f4f4f !important; 
+  }
+  .headeer-btn{
+    background-color: #2f4f4f !important;
+  }
+}
