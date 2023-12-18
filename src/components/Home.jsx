@@ -1,6 +1,7 @@
 
 import Header from "./Header"
 import { Button } from "reactstrap"
+import Techs from "./SliderTechs"
 const Home = () => {
   return (
     <>
@@ -23,13 +24,21 @@ const Home = () => {
      <h3>I create beautful and faster websites.</h3>
      <h6>Want to know more?</h6>
      <div className="contact-btn-container">
-     <Button className="contact-btn" color="secondary">Contact Me</Button>
+     <Button className="contact-btn" color="secondary"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person-lines-fill" viewBox="0 0 16 16">
+  <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+</svg> Contact Me</Button>
      </div>
     </div>
+    <div className="about-me">
+    <h3>I am Frontend Developer</h3>
+    <p>Read more about me <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></p>
+    </div>
     <div className="projects_section">
-      <h3>PROJECTS</h3>
-      <div>
-        
+      <h3>TECHS</h3>
+      <div className="techs-card">
+        <Techs/>
       </div>
     </div>
    </div>
