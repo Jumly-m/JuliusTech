@@ -169,14 +169,10 @@ body,html{
 }
 
 .carousel-control-next-icon{
-  background-color: #20b2aa !important; 
-  padding: 3px !important;
-  border-radius:6px !important;
+ display: none !important;
 }
 .carousel-control-prev-icon{
-  background-color: #20b2aa !important;  
-  padding: 3px !important;
-  border-radius:6px !important;
+  display: none !important;
 }
    
 }
