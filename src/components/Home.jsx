@@ -38,7 +38,7 @@ const Home = () => {
     </div>
     <div className="services-contacts">
       <h3>PROJECTS</h3>
-      <p>I have done alot of works and projects ,i cant show all of them,but you can enjoy few of them.</p>
+      <p>I have done alot of works and projects ,i cant show all of them,but you can enjoy few of them.For more please <span className="contact_span"><a>Contact me</a></span> </p>
       <div className="projects">
       <Projects/>
       </div>
