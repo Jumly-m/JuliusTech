@@ -1,4 +1,4 @@
-
+import ServiceCard from "./ServiceCard"
 import Header from "./Header"
 import { Button } from "reactstrap"
 import Techs from "./SliderTechs"
@@ -38,13 +38,32 @@ const Home = () => {
     </div>
     <h3 className="servicestitle">SERVICES</h3>
     <div className="services">
-    <p>our services here </p>
+    <ServiceCard
+      cardTitle="Custom Web development"
+      cardDescription="Faster and beautful custom website for your business,portifolio,and services."
+      cardButton="Send Inquery"
+      cardimage="assets/web.jpg"
+    />
+    <ServiceCard
+      cardTitle="Portifolio Websites"
+      cardDescription="Stand before work with professional portifolio website"
+      cardButton="Send Inquery"
+      cardimage="assets/port1.png"
+    />
+    <ServiceCard
+      cardTitle="Landing page"
+      cardDescription="Faster and interactive landing page for your business."
+      cardButton="Send Inquery"
+      cardimage="assets/web.jpg"
+    />
     </div>
 
 
     <h3 className="projecttitle">PROJECTS</h3>
     <div className="services-contacts">
-      <p>I have done alot of works and projects, i cant show all of them here,but you can enjoy few of them for more please <span className="contact_span"><a href="">Contact me</a></span> </p>
+    <div className="service-contacts-details">
+    <p>I have done alot of works and projects, i cant show all of them here,but you can enjoy few of them for more please <span className="contact_span"><a href="">Contact me</a></span> </p>
+    </div>
       <div className="projects">
       <Projects/>
       </div>

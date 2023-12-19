@@ -203,6 +203,12 @@ margin-bottom: 24px;
 margin-left: 8px;
 margin-right: 8px;
 }
+.service-contacts-details{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding: 20px;
+}
 
 .projects{
   width: 100%;
@@ -232,7 +238,6 @@ color:rgb(99, 248, 0)!important;
 }
 
 .services{
-  border:1px solid red;
   width: 100%;
   display: flex;
   align-items:center;
@@ -245,6 +250,56 @@ margin-bottom: 24px;
 color:rgb(99, 248, 0)!important;
 }
 
+.service-card{
+  width: 100%;
+  border-radius:12px;
+  border:2px solid #20b2aa;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-bottom: 36px;
+  margin-top: 36px;
+}
+.cardimg{
+  width:100%;
+  height: 300px;
+  border-top-left-radius:12px;
+  border-top-right-radius:12px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid  gray;
+}
+.servicecard-details{
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4px;
+}
+.servicecard-details h3{
+  color:rgb(99, 248, 0); 
+  margin-bottom: 24px;
+}
+.servicecard-details p{
+  text-align: center;
+  padding-left: 10px;
+}
+.servicecard-button-container{
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  border:none;
+}
+.servicecard-btn{
+  width: 90%;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  background-color: #20b2aa !important; 
+  border:none !important;
+}
 }
 
 
