@@ -12,7 +12,7 @@ const items = [
     src: 'assets/wds.png',
     altText: 'webdeveloperinswahili',
     caption: 'Web developer frontend',
-    key: 1,
+    key: 4,
     link: 'https://wds-five.vercel.app/', // Add the link property
   },
   {
@@ -28,6 +28,13 @@ const items = [
     caption: 'Chat completion bot',
     key: 3,
     link: 'https://legacy-ai-frontend.vercel.app/chats', // Add the link property
+  },
+  {
+    src: 'assets/wbs.png',
+    altText: 'webdev',
+    caption: 'course selling web ',
+    key: 1,
+    link: 'https://webdevs.tech/', // Add the link property
   },
   // ... (other items with links)
 ];

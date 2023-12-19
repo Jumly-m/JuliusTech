@@ -18,7 +18,7 @@ function Header(props) {
   return (
     <div className="header_container">
       <Navbar color="faded" light expand="md" className='header'>
-        <NavbarBrand href="/" className="me-auto">
+        <NavbarBrand href="/" className="me-auto brandname">
           JuliusTech
         </NavbarBrand> 
         <NavbarToggler onClick={toggleNavbar} className="me-2" />
