@@ -3,6 +3,7 @@ import Header from "./Header"
 import { Button } from "reactstrap"
 import Techs from "./SliderTechs"
 import Projects from "./Projects"
+import Footer from "./Footer"
 const Home = () => {
   return (
     <>
@@ -77,6 +78,7 @@ const Home = () => {
     </div>
    
    </div>
+   <Footer/>
     </>
 
   )
