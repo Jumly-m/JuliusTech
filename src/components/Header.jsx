@@ -18,7 +18,7 @@ function Header(props) {
     <div className="header_container">
       <Navbar color="faded" light expand="md" className='header'>
         <NavbarBrand href="/" className="me-auto brandname">
-          <img className='logo' src="assets/logo4.png" alt="logo"/>
+          <img className='logo' src="assets/logo.png" alt="logo"/>
         </NavbarBrand> 
         <NavbarToggler onClick={toggleNavbar} className="me-2" />
         <Collapse isOpen={!collapsed} navbar>
