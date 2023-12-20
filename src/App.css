@@ -99,6 +99,7 @@ body,html{
     text-decoration: none;
     margin-left: 10px;
     color:inherit;
+    cursor: pointer;
     }
     .bi-clock{
       margin-right: 10px;
@@ -123,7 +124,7 @@ body,html{
       color:#000000 !important;
     }
     .projects_section{
-      margin-top: 30px;
+      margin-top: 60px;
       display: flex;
     align-items:center;
     justify-content: center;
@@ -167,16 +168,20 @@ body,html{
     .techs-card{
       width: 100%;
       display: flex;
-      align-items:center;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 16px;
-      border:1px solid #6c757d;
       border-radius: 12px;
-     min-height: 300px;
-     max-height:100% ;
+      margin-top: 24px;
+      margin-bottom: 60px;
     }
-
+    .techbutton-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+     .techs{
+      background-color:#20b2aa !important;
+      border:none !important;
+     }
 
 .carousel-indicators button{
   background-color: #20b2aa !important; 
@@ -387,7 +392,7 @@ margin-right: 14px;
 }
 /* !!!: blinking whatsap icon */
 .blink {
-  animation: blink 3s infinite;
+  animation: blink 2s infinite;
 }
 
 @keyframes blink {
@@ -465,6 +470,7 @@ margin-right: 14px;
   text-decoration: none;
   margin-left: 10px;
   color:inherit;
+  cursor:pointer;
   }
   .bi-clock{
     margin-right: 10px;

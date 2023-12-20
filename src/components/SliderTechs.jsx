@@ -1,3 +1,69 @@
+import { Button } from "reactstrap"
+
+const Techs = () => {
+  return (
+    <div className="techbutton-container">
+    <Button className="techs">Html</Button>
+    <Button className="techs">Css</Button>
+    <Button className="techs">Reactjs</Button>
+    <Button className="techs">Nodejs</Button>
+    <Button className="techs">Express</Button>    
+    <Button className="techs">PostgresSQL</Button>    
+    <Button className="techs">Git&Github</Button>    
+    <Button className="techs">Vite</Button>    
+    <Button className="techs">Vercel</Button>    
+
+    </div>
+  )
+}
+
+export default Techs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* !!!: 
+
+
+
+
+
+
+
 import { useState } from 'react';
 import {
   Carousel,
@@ -119,3 +185,4 @@ function Techs(args) {
 }
 
 export default Techs;
+*/}
