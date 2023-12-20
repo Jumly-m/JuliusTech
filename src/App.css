@@ -43,6 +43,11 @@ body,html{
 /* !!!: Design for small devices  */
 @media only screen and (max-width: 678px) {
 
+  .logo{
+    width: 110px;
+    height: 110px;
+    border-radius:50%;
+  }
   .brandname{
     color:rgb(99, 248, 0)!important;
   }

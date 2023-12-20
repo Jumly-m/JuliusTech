@@ -42,19 +42,19 @@ const Home = () => {
     <ServiceCard
       cardTitle="Custom Web development"
       cardDescription="Faster and beautful custom website for your business,portifolio,and services."
-      cardButton="Send Inquery"
+      cardButton="Order Now"
       cardimage="assets/web.jpg"
     />
     <ServiceCard
       cardTitle="Portifolio Websites"
       cardDescription="Stand before work with professional portifolio website"
-      cardButton="Send Inquery"
+      cardButton="Order Now"
       cardimage="assets/port1.png"
     />
     <ServiceCard
       cardTitle="Landing page"
       cardDescription="Faster and interactive landing page for your business."
-      cardButton="Send Inquery"
+      cardButton="Order Now"
       cardimage="assets/web.jpg"
     />
     </div>
