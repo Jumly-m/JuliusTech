@@ -32,7 +32,7 @@ const Home = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fa fa-whatsapp whatsapp-icon"></i>
+        <i className="fa fa-whatsapp whatsapp-icon blink"></i>
       </a>
 
      <div className="contact-btn-container">
