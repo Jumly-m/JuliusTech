@@ -140,6 +140,9 @@ body,html{
       color:rgb(99, 248, 0)!important;
     }
 
+    .newslettertitle{
+      color:rgb(99, 248, 0);
+    }
     .about-me{
       width: 100%;
       margin-top: 60px;
@@ -413,6 +416,42 @@ margin-right: 14px;
   }
 }
 /* !!!: blinking whatsap icon */
+
+
+/* !!!: subscribe section */
+.newsletter-section{
+  border:1px solid red;
+  border-radius:12px;
+  border:2px solid #20b2aa;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.newsletter-section h3{
+  color:rgb(99, 248, 0);
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.newslettertitle{
+  margin-bottom: 20px;
+}
+.subscribebtncontainer{
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border:none !important;
+}
+.subscribe-btn{
+  width: 100%;
+  border:none !important;
+  background-color:orange !important;
+}
+.bi-arrow-up-right-square{
+  margin-right: 4px;
+}
 }
 
 
