@@ -57,6 +57,18 @@ body,html{
     margin-bottom: 50px;
 
   }
+  
+  .ads-area{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .claimofferbtn{
+    margin-top: 10px;
+    margin-bottom: 5px;
+   
+  }
   .introduction_section{
     margin-top: 10px;
     display: flex;
@@ -94,6 +106,7 @@ body,html{
       margin-left: 12px;
       margin-right: 12px;
       padding: 10px;
+      width: 97%;
     }
     .phone{
     text-decoration: none;
@@ -480,6 +493,28 @@ margin-right: 14px;
 
 /* !!!: Design for large screens */
 @media only screen and (min-width: 678px) {
+  .logo{
+    width: 90px;
+    height: 90px;
+  }
+
+
+  .header_container{
+    margin-bottom: 100px;
+  
+  }
+  .header{
+    background-color: #20b2aa;
+    height: 110px;
+   
+  }
+  
+  .nav_items{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    padding-right: 46px;
+  }
   .header_container{
     margin-bottom: 20px;
   
@@ -528,6 +563,19 @@ margin-right: 14px;
   }
   .bi-clock{
     margin-right: 10px;
+  }
+  .ads-area{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border:1px solid red;
+  }
+  .claimofferbtn{
+    margin-top: 10px;
+  }
+  .christmasimg{
+    width: 20px;
+    height: 20px;
   }
   .contact-btn-container{
     width: 400px;

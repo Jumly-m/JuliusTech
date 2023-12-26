@@ -25,6 +25,11 @@ function Header(props) {
           <Nav navbar className='nav_items'>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">
+             Login 
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="https://github.com/reactstrap/reactstrap">
              Register  
               </NavLink>
             </NavItem>

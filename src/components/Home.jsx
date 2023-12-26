@@ -9,6 +9,13 @@ const Home = () => {
   return (
     <>
     <Header/>
+    <div className="ads-area">
+    <div className="work_time ">
+    <div>
+   <h6>Holiday offer 30% off  <img className="christmasimg" src="assets/christmass.png" alt="christmass offer"/></h6>
+   <Button className="contact-btn claimofferbtn">Claim Now</Button>
+</div>
+    </div>
     <div className="work_time">
     <div>
     <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -21,6 +28,11 @@ const Home = () => {
 </svg> Monday -Friday 7:00-18:00 EAT</p>
 </div>
     </div>
+
+   
+
+    </div>
+  
    <div className="home_page">
     <div className="introduction_section">
      <h1 >Welcome to JuliusTech.</h1>
