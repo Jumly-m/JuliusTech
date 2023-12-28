@@ -1,4 +1,5 @@
 import { Button } from "reactstrap"
+import { Link } from "react-router-dom"
 
 const ServiceCard = (props) => {
   return (
@@ -9,7 +10,7 @@ const ServiceCard = (props) => {
         <p>{props.cardDescription}</p>
      </div>
      <div className="servicecard-button-container">
-        <Button className="servicecard-btn">{props.cardButton}</Button>
+        <Link className="tolink" to="/order"><Button className="servicecard-btn">{props.cardButton}</Button></Link>
      </div>
     </div>
   )
