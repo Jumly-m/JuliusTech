@@ -2,6 +2,8 @@ import { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
+//service id    service_gvmy0n8
+
 const Order = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -59,6 +61,7 @@ const Order = () => {
       </div>
     );
   };
+  //sending email
 
   return (
     <>
@@ -68,7 +71,8 @@ const Order = () => {
           {errorMessage()}
           {successMessage()}
         </div>
-        <form method="post">
+        <h3 className="order-title">YOUR ORDER</h3>
+        <form method="post" className="form">
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -88,7 +92,7 @@ const Order = () => {
             required
             id="email"
             name="email"
-            placeholder="juliustech@gmail.com"
+            placeholder="Example: juliustech@gmail.com"
             onChange={handleEmail}
             value={email}
           />
@@ -107,6 +111,7 @@ const Order = () => {
             <option value="Portifolio Website">Portifolio Website</option>
             <option value="Landing Page">Landing Page</option>
             <option value="EVM Dapp">EVM Dapp</option>
+            <option value="Cryptocurrency Token,BSC,ETH,POLY">Cryptocurrency Token,BSC,ETH,POLY</option>
             {/* Add more options as needed */}
           </select>
 
