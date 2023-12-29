@@ -38,9 +38,11 @@ const Auth = () => {
         setProfile(null);
     };
 
+
+   
     return (
         <div>
-          <h2>React Google Login</h2>
+          <h2>React Google Login  </h2>
           <br />
           <br />
           {user?.access_token ? (
