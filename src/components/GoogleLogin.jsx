@@ -39,7 +39,7 @@ const Auth = () => {
     };
 
 
-   
+ 
     return (
         <div>
           <h2>React Google Login  </h2>
