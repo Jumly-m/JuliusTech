@@ -2,7 +2,6 @@ import { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-//service id    service_gvmy0n8
 
 const Order = () => {
   const [name, setName] = useState("");

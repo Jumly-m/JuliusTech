@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink,
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 function Header(props) {
   const [collapsed, setCollapsed] = useState(true);
@@ -24,9 +25,7 @@ function Header(props) {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar className='nav_items'>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-             Login 
-              </NavLink>
+            <Link to="/auth"> Login</Link>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">

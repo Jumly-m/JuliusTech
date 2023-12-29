@@ -3,8 +3,8 @@ import './App.css'
 import Home from './components/Home'
 import Order from './components/OrderForm'
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-//import { GoogleLogin } from '@react-oauth/google';
-
+import Dashboard from './components/Dashboard';
+import Auth from './components/GoogleLogin';
 
 
 function App() {
@@ -18,6 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/order" element={<Order />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/auth" element={<Auth />} />
         </Routes>
       </BrowserRouter>
     )

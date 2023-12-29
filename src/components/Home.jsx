@@ -5,6 +5,7 @@ import Techs from "./SliderTechs"
 import Projects from "./Projects"
 import Footer from "./Footer"
 import 'animate.css';
+
 const Home = () => {
   return (
     <>
