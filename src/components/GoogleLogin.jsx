@@ -1,65 +1,61 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { googleLogout, useGoogleLogin } from '@react-oauth/google';
 import axios from 'axios';
 
 const Auth = () => {
-    const [ user, setUser ] = useState([]);
-    const [ profile, setProfile ] = useState([]);
-
- 
+    const [user, setUser] = useState(null);
+    const [profile, setProfile] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     const login = useGoogleLogin({
         onSuccess: (codeResponse) => setUser(codeResponse),
-        onError: (error) => console.log('Login Failed:', error)
+        onError: (error) => console.error('Login Failed:', error)
     });
 
-    useEffect(
-        () => {
-            if (user) {
-                axios
-                    .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
-                        headers: {
-                            Authorization: `Bearer ${user.access_token}`,
-                            Accept: 'application/json'
-                        }
-                    })
-                    .then((res) => {
-                        setProfile(res.data);
-                    })
-                    .catch((err) => console.log(err));
-            }
-        },
-        [ user ]
-    );
+    useEffect(() => {
+        if (user && user.access_token) {
+            setLoading(true);
+            axios
+                .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`)
+                .then((res) => {
+                    setProfile(res.data);
+                })
+                .catch((err) => {
+                    console.error('Error fetching user profile:', err);
+                })
+                .finally(() => {
+                    setLoading(false);
+                });
+        }
+    }, [user]);
 
-    // log out function to log the user out of google and set the profile array to null
     const logOut = () => {
         googleLogout();
+        setUser(null);
         setProfile(null);
     };
 
-
- 
     return (
         <div>
-          <h2>React Google Login  </h2>
-          <br />
-          <br />
-          {user?.access_token ? (
-            <div>
-              <img src={profile.picture} alt="user image" />
-              <h3>User Logged in</h3>
-              <p>Name: {profile.name}</p>
-              <p>Email Address: {profile.email}</p>
-              <br />
-              <br />
-              <button onClick={logOut}>Log out</button>
-            </div>
-          ) : (
-            <button onClick={() => login()}>Sign in with Google 🚀 </button>
-          )}
+            <h2>React Google Login</h2>
+            <br />
+            <br />
+            {loading && <p>Loading...</p>}
+            {user?.access_token ? (
+                <div>
+                    <img src={profile?.picture} alt="user image" />
+                    <h3>User Logged in</h3>
+                    <p>Name: {profile?.name}</p>
+                    <p>Email Address: {profile?.email}</p>
+                    <br />
+                    <br />
+                    <button onClick={logOut}>Log out</button>
+                </div>
+            ) : (
+                <button onClick={() => login()}>Sign in with Google 🚀 </button>
+            )}
         </div>
-      );
-      
-            }
-export default Auth
+    );
+};
+
+export default Auth;
