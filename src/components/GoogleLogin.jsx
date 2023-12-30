@@ -8,9 +8,19 @@ const Auth = () => {
     const [loading, setLoading] = useState(false);
 
     const login = useGoogleLogin({
-        onSuccess: (codeResponse) => setUser(codeResponse),
+        onSuccess: (codeResponse) => {
+            setUser(codeResponse);
+            localStorage.setItem('user', JSON.stringify(codeResponse));
+        },
         onError: (error) => console.error('Login Failed:', error)
     });
+
+    useEffect(() => {
+        const storedUser = localStorage.getItem('user');
+        if (storedUser) {
+            setUser(JSON.parse(storedUser));
+        }
+    }, []);
 
     useEffect(() => {
         if (user && user.access_token) {
@@ -33,6 +43,7 @@ const Auth = () => {
         googleLogout();
         setUser(null);
         setProfile(null);
+        localStorage.removeItem('user');
     };
 
     return (

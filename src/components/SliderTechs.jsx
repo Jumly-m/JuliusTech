@@ -7,11 +7,11 @@ const Techs = () => {
     <Button className="techs">Css</Button>
     <Button className="techs">Reactjs</Button>
     <Button className="techs">Nodejs</Button>
-    <Button className="techs">Express</Button>    
+    <Button className="techs">Vercel</Button>    
     <Button className="techs">PostgresSQL</Button>    
     <Button className="techs">Git&Github</Button>    
     <Button className="techs">Vite</Button>    
-    <Button className="techs">Vercel</Button>    
+    <Button className="techs">Expressjs</Button>    
 
     </div>
   )

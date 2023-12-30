@@ -25,7 +25,7 @@ function Header(props) {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar className='nav_items'>
             <NavItem>
-            <Link to="/auth"> Login</Link>
+            <Link className="link" to="/auth"> Login</Link>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">

@@ -52,7 +52,7 @@ const Home = () => {
      <div className="contact-btn-container">
      <Button href="https://wa.me/+255779649545" className="contact-btn " color="secondary"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person-lines-fill" viewBox="0 0 16 16">
   <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
-</svg> Contact Me</Button>
+</svg> Hire me</Button>
      </div>
     </div>
     <div className="about-me">
@@ -72,22 +72,28 @@ const Home = () => {
     <h3 className="servicestitle">SERVICES</h3>
     <div className="services">
     <ServiceCard
-      cardTitle="Custom Web development"
+      cardTitle="Custom Website"
       cardDescription="Faster and beautful custom website for your business,portifolio,and services."
       cardButton="Order Now"
-      cardimage="assets/web.jpg"
+      cardimage="assets/website.png"
     />
     <ServiceCard
       cardTitle="Portifolio Websites"
       cardDescription="Stand before work with professional portifolio website."
       cardButton="Order Now"
-      cardimage="assets/port1.png"
+      cardimage="assets/portifolio2.png"
     />
     <ServiceCard
       cardTitle="Landing page"
       cardDescription="Faster, interactive and professional landing page for your business ."
       cardButton="Order Now"
-      cardimage="assets/web.jpg"
+      cardimage="assets/landingpage2.png"
+    />
+    <ServiceCard
+      cardTitle="Website Hosting"
+      cardDescription="Lets do all technical parts to make your site online again."
+      cardButton="Order Now"
+      cardimage="assets/webhosting.png"
     />
     </div>
 
@@ -107,9 +113,7 @@ const Home = () => {
         <h3>Join the NewsLetter</h3>
         <p>Useful tech tips,Ready made solutions and weekely updates direct to your inbox.<br/> No spam Unsubscribe any time.</p>
         <div className="subscribebtncontainer"><a href="">  <Button className="subscribe-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
-  <path fillRule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
-</svg>  Subscribe Now</Button></a></div>
+    Subscribe Now</Button></a></div>
     </div>
    </div>
    <Footer/>
